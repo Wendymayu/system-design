@@ -7,17 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-demo-generator" />
         <module name="short-url" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="short-url" target="1.11" />
+      <module name="spring-demo-generator" target="1.11" />
       <module name="system-design" target="1.11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="short-url" options="-parameters" />
+      <module name="spring-demo-generator" options="-parameters" />
     </option>
   </component>
 </project>
